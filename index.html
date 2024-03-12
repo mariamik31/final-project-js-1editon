@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+ <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+</head>
+<body>
+<header>
+<!-- Navbar -->
+    <section class="top-nav">
+        <div>
+          <img src="img/Logo.png" style="border: none;" alt="">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><button class="navbarbtn">Home</button></li>
+          <li><button class="navbarbtn">About Us</button></li>
+          <li><button class="navbarbtn">Courses</button></li>
+          <li><button class="navbarbtn">pricing</button></li>
+          <li><button class="navbarbtn">Contact</button></li>
+        </ul>
+      </section>
+</header>
+<!-- slider -->
+<section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider01.png" 
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider02.avif"
+                 style="width: 400px; height: 270px"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider03.jpg"
+                 style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider04.jpg" 
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider05.png"
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slide06.jpg" 
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slider07.jpg" 
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slide08.jpg" 
+                style="width: 400px; height: 270px;"></div></li>
+              <li class="splide__slide"><div><img class="slideimg" src="img/slide09.jpg" 
+                style="width: 400px; height: 270px;"></div></li>
+         </ul>
+    </div>
+    <div class="my-slider-progress">
+        <div class="my-slider-progress-bar"></div>
+      </div>
+  </section>  
+<!-- filter -->
+<!-- <section>
+    <div class="container">
+        <h2>User filter</h2>
+        <input type="text" id="filter" />
+        <ul id="result"></ul>
+      </div>
+    </section> -->
+    <!-- form -->
+    <section >
+      <form action="" id="resgitration" method="post">
+        <div>
+          <input
+            type="text"
+            name="username"
+            placeholder="eneter your username"
+            id="usernamefield"
+          />
+          <p class="error-text" id="error-username"></p>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="passw"
+            placeholder="eneter your password"
+            id="passwordfield"
+          />
+          <i class="fa-solid fa-eye"id="showIcon"></i>
+          <p class="error-text" id="error-passw"></p>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="passw2"
+            placeholder="repeat your password"
+            id="passwordfield2"
+          />
+          <p class="error-text" id="error-passw2"></p>
+        </div>
+        <div>
+          <input type="email" id="emailfield" placeholder="enter email" />
+          <p id="emailError"></p>
+        </div>
+        <div>
+          <input type="radio" name="gender" class="radio-class" />
+          <label for="">Male</label>
+          <input type="radio" name="gender" class="radio-class" />
+          <label for="">Female</label>
+          <p class="error-text" id="error-gender"></p>
+        </div>
+        <div>
+          <input type="checkbox" id="agree" name="check" />
+          <label for="agree">i agree terms and conditions</label>
+          <p class="error-text" id="error-check"></p>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+  </section>
+
+   
+
+  
+
+
+   
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+   
+       
+
+
+
+
+<div class="conteiner3">
+     <div class="box3">
+    <h3 id="box3text" >Benefits</h3>
+    <p id="box3text2" >Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>    
+     </div>
+    <div class="box4">
+    <button id="buttonviewall">View All</button>
+     </div>
+</div>
+
+<div class="conteiner4">
+    <div class="boxes">
+        <p class="number">01</p>
+        <p class="boxo1text"> Flexible Learning Schedule</p>
+        <p class="boxo1text2">Fit your coursework around your existing commitments and obligations.</p>
+        <a href="#" class="arrow" ><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+    <div class="boxes">
+        <p class="number">02</p>
+        <p class="boxo1text"> Expert Instruction</p>
+        <p class="boxo1text2">Learn from industry experts who have hands-on experience in design and development.</p>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+    <div class="boxes">
+        <p class="number">03</p>
+        <p class="boxo1text">Diverse Course Offerings</p>
+        <p class="boxo1text2">Explore a wide range of design and development courses covering various topics.</p>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+    <div class="boxes">
+        <p class="number">04</p>
+        <p class="boxo1text">Updated Curriculum</p>
+        <p class="boxo1text2">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+    <div class="boxes">
+        <p class="number">05</p>
+        <p class="boxo1text">Practical Projects and Assignments</p>
+        <p class="boxo1text2">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+    <div class="boxes">
+        <p class="number">06</p>
+        <p class="boxo1text">Interactive Learning Environment</p>
+        <p class="boxo1text2">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #ff9508;"></i></a>
+    </div>
+</div>
+
+<div class="conteiner3">
+    <div class="box3">
+   <h3 id="box3text" >Our Courses</h3>
+   <p id="box3text2" >Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>    
+    </div>
+   <div class="box4">
+   <button id="buttonviewall">View All</button>
+    </div>
+</div>
+
+<div class="conteiner6">
+    <div class="imgbox">
+        <img src="img/Image.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                <p class="mintext">4 Weeks</p>
+                <p class="mintext2">Beginner</p>
+                <p class="mintext3">By John Smith</p>
+             </div>
+             <p class="con6text">Web Design Fundamentals</p>
+             <p class="con6text2">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+             <button class="getitnowbutton">Get it Now</button>
+    </div>
+
+    <div class="imgbox">
+        <img src="img/Image2.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                 <p class="mintext">6 Weeks</p>
+                 <p class="mintext2">Intermediate</p>
+                 <p class="mintext3">By Emily Johnson</p>
+             </div>
+             <p class="con6text">UI/UX Design</p>
+             <p class="con6text2">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+             <button class="getitnowbutton">Get it Now</button>
+    </div>
+
+    <div class="imgbox">
+         <img src="img/Image3.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                 <p class="mintext">8 Weeks</p>
+                 <p class="mintext2">Intermediate</p>
+                 <p class="mintext3">By David Brown</p>
+             </div>
+             <p class="con6text">WMobile App Development</p>
+             <p class="con6text2">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+             <button class="getitnowbutton">Get it Now</button>
+    </div>
+
+    <div class="imgbox">
+         <img src="img/Image4.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                 <p class="mintext">10 Weeks</p>
+                 <p class="mintext2">Beginner</p>
+                 <p class="mintext3">By Sarah Thompson</p>
+             </div>
+             <p class="con6text">Graphic Design for Beginners</p>
+             <p class="con6text2">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+             <button class="getitnowbutton">Get it Now</button>
+    </div>
+
+    <div class="imgbox"> 
+         <img src="img/Image5.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                 <p class="mintext">10 Weeks</p>
+                 <p class="mintext2">Intermediate</p>
+                 <p class="mintext3">By Michael Adams</p>
+             </div>
+             <p class="con6text">Front-End Web Development</p>
+             <p class="con6text2">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+             <button class="getitnowbutton">Get it Now</button>
+     </div>
+
+     <div class="imgbox"> 
+         <img src="img/Image6.png" style="width: 549.5; height: 266;">
+             <div class="minbox">
+                  <p class="mintext">6 Weeks</p>
+                 <p class="mintext2">Advance</p>
+                 <p class="mintext3">By Jennifer Wilson</p>
+              </div>
+             <p class="con6text">Advanced JavaScript</p>
+             <p class="con6text2">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+            <button class="getitnowbutton">Get it Now</button>
+     </div>
+</div>
+
+<div class="conteiner3">
+    <div class="box3">
+   <h3 id="box3text" >Our Testimonials</h3>
+   <p id="box3text2" >Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>    
+    </div>
+   <div class="box4">
+   <button id="buttonviewall">View All</button>
+    </div>
+</div>
+
+<div class="conteiner5">
+    <div class="storybox">
+        <p class="Story">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+         <div class="imgbuttonbox">
+             <div class="sbox">
+                 <img class="img" src="img/sara.png" style= "width:50px;  height:50px;">
+                 <p class="name">Sarah L</p>
+             </div>
+             <button class="storybutton">Read Full Story</button>
+         </div>
+    </div>
+   
+    <div class="storybox">
+         <p class="Story">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+         <div class="imgbuttonbox">
+             <div class="sbox">
+                <img class="img" src="img/jason.png" style= "width:50px;  height:50px;">
+                <p class="name">Jason M</p>
+             </div>
+             <button class="storybutton">Read Full Story</button>
+         </div>
+    </div>     
+
+    <div class="storybox">
+         <p class="Story">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+         <div class="imgbuttonbox">
+             <div class="sbox">
+                <img class="img" src="img/emily.png" style= "width:50px;  height:50px;">
+                <p class="name">Emily R</p>
+             </div>
+             <button class="storybutton">Read Full Story</button>
+         </div>
+    </div> 
+
+    <div class="storybox">
+         <p class="Story">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+         <div class="imgbuttonbox">
+             <div class="sbox">
+                <img class="img" src="img/michael.png" style= "width:50px;  height:50px;">
+                <p class="name">Michael K</p>
+            </div>
+             <button class="storybutton">Read Full Story</button>
+         </div>
+     </div>
+</div>
+
+<div class="conteinerform">
+
+
+    <h1 class="con-us">Contact us</h1>
+    <form action="/action_page.php">
+    <div class="input">  
+         <label for="firstname">First name</label>
+         <input form="text" class="border" name="firstname" >
+    </div>     
+        
+    <div class="input">
+        <label for="lastname">Last Name</label>
+        <input type="text" class="border"  name="lastname" > 
+    </div>
+    
+    <div class="input">
+        <label for="mail">Mail</label>
+        <input type="text" class="border" name="mail">
+    </div>
+        
+    <div>
+        <label for="gender"> Female </label>
+        <input type="radio"  name="gender">
+     
+        <label for="gender">Male </label>
+        <input type="radio"  name="gender">
+    </div>
+    
+    <div class="message">
+        <label for="message">Message</label>
+        <input type="text" id="m" name="message">
+    </div>
+    
+    <div>
+        <button class="contactbutton">submit</button>
+    </div>
+</div>
+</form>
+        
+
+<div class="conteiner7">
+     <div class="contact">
+        <ul>
+        <img src="img/Logo.png" style="width: 33px; height: 33px;">
+        <li><i class="fa-solid fa-envelope"></i> hello@skillbridge.com</li>
+        <li> <i class="fa-solid fa-phone"></i>+91 91813 23 2309 </li>
+        <li><i class="fa-solid fa-location-dot"></i>Somewhere in the World</li>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2977.5616021802225!2d44.74927007543777!3d41.72997797467613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQzJzQ3LjkiTiA0NMKwNDUnMDYuNiJF!5e0!3m2!1sen!2sge!4v1703377377865!5m2!1sen!2sge" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </ul>
+     </div>
+
+     <div class="home">
+       <h4>Home</h4>
+       <button class="button7">Benefits</button>
+       <button class="button7">Our Courses</button> 
+       <button class="button7">Our Testimonials</button> 
+       <button class="button7">Our FAQ</button>
+    </div>
+
+     <div class="aboutus">
+        <h5>About Us</h5>
+        <button class="button8" >Company</button>
+        <button class="button8">Achievements</button>
+        <button class="button8">Our Goals</button>
+     </div>
+    <div class="button9">
+        <h6>Social Profiles</h6>
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+        <i class="fa-brands fa-twitter fa-2xl"></i>
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+    </div>
+</div>
+
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+<script src="node_modules/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
