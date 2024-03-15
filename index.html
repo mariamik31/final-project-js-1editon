@@ -17,24 +17,33 @@
 </head>
 <body>
 <header>
-<!-- Navbar -->
-    <section class="top-nav">
-        <div>
-          <img src="img/Logo.png" style="border: none;" alt="">
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-        <ul class="menu">
-          <li><button class="navbarbtn">Home</button></li>
-          <li><button class="navbarbtn">About Us</button></li>
-          <li><button class="navbarbtn">Courses</button></li>
-          <li><button class="navbarbtn">pricing</button></li>
-          <li><button class="navbarbtn">Contact</button></li>
+      <nav class="navbar">
+        <a href="#" class="nav-logo"><img src="img/Logo.png" alt="Logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
         </ul>
-      </section>
-</header>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    </header>
 <!-- slider -->
 <section class="splide" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
@@ -71,56 +80,86 @@
         <ul id="result"></ul>
       </div>
     </section> -->
-    <!-- form -->
-    <section >
-      <form action="" id="resgitration" method="post">
-        <div>
-          <input
-            type="text"
-            name="username"
-            placeholder="eneter your username"
-            id="usernamefield"
-          />
-          <p class="error-text" id="error-username"></p>
-        </div>
-        <div>
-          <input
-            type="password"
-            name="passw"
-            placeholder="eneter your password"
-            id="passwordfield"
-          />
-          <i class="fa-solid fa-eye"id="showIcon"></i>
-          <p class="error-text" id="error-passw"></p>
-        </div>
-        <div>
-          <input
-            type="password"
-            name="passw2"
-            placeholder="repeat your password"
-            id="passwordfield2"
-          />
-          <p class="error-text" id="error-passw2"></p>
-        </div>
-        <div>
-          <input type="email" id="emailfield" placeholder="enter email" />
-          <p id="emailError"></p>
-        </div>
-        <div>
-          <input type="radio" name="gender" class="radio-class" />
-          <label for="">Male</label>
-          <input type="radio" name="gender" class="radio-class" />
-          <label for="">Female</label>
-          <p class="error-text" id="error-gender"></p>
-        </div>
-        <div>
-          <input type="checkbox" id="agree" name="check" />
-          <label for="agree">i agree terms and conditions</label>
-          <p class="error-text" id="error-check"></p>
-        </div>
-        <button type="submit">submit</button>
-      </form>
-  </section>
+   
+    <section class="conteiner1">
+    <form action="" id="resgitration" method="post">
+      <div>
+        <h2 class="headertext">Registration</h2>
+        <input class="input" type="text" name="username" placeholder="eneter your username" id="usernamefield"/>
+        <p class="error-text" id="error-username"></p>
+      </div>
+      <div>
+        <input class="input" type="password" name="passw" placeholder="eneter your password" id="passwordfield"/>
+        <i class="fa-solid fa-eye" id="showIcon"></i>
+        <p class="error-text" id="error-passw"></p>
+      </div>
+      <div>
+        <input class="input" type="password" name="passw2" placeholder="repeat your password" id="passwordfield2"/>
+        <p class="error-text" id="error-passw2"></p>
+      </div>
+      <div>
+        <input class="input" type="email" id="emailfield" placeholder="enter email" />
+        <p id="emailError"></p>
+      </div>
+      <div>
+        <input class="input-2" type="radio" name="gender" class="radio-class" />
+        <label for="">Male</label>
+        <input class="input-2" type="radio" name="gender" class="radio-class" />
+        <label for="">Female</label>
+        <p class="error-text" id="error-gender"></p>
+      </div>
+      <div>
+        <input class="input-2" type="checkbox" id="agree" name="check" />
+        <label for="agree">i agree terms and conditions</label>
+        <p class="error-text" id="error-check"></p>
+      </div>
+      <button class="submit">submit</button>
+    </form>
+<div class="accordionbox">
+    <h2 class="headertext">Our Courses</h2>
+    <button class="accordion"></i>UI/UX Design</button>
+<div class="panel">
+  <p class="contents">Master the art of creating intuitive user interfaces 
+    (UI) and enhancing user experiences (UX). Learn design principles,
+     wireframing, prototyping, and usability testing techniques.</p>
+</div>
+
+<button class="accordion">Web Design Fundamentals</button>
+<div class="panel">
+  <p class="contents">Learn the fundamentals of web design, 
+    including HTML, CSS, and responsive design principles. 
+    Develop the skills to create visually appealing and user-friendly websites.</p>
+</div>
+
+<button class="accordion">Mobile App Development</button>
+<div class="panel">
+  <p class="contents">Dive into the world of mobile app development. 
+    Learn to build native iOS and Android applications using industry-leading 
+    frameworks like Swift and Kotlin.</p>
+</div>
+
+<button class="accordion">Graphic Design for Beginners</button>
+<div class="panel">
+  <p class="contents">Discover the fundamentals of graphic design, including typography, 
+    color theory, layout design, and image manipulation techniques. 
+    Create visually stunning designs for print and digital media.</p>
+</div>
+
+<button class="accordion">Front-End Web Development</button>
+<div class="panel">
+  <p class="contents">Become proficient in front-end web development. 
+    Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React.
+     Build interactive and responsive websites.</p>
+</div>
+
+<button class="accordion">Advanced JavaScript</button>
+<div class="panel">
+  <p class="contents">Take your JavaScript skills to the next level.
+     Explore advanced concepts like closures, prototypes, asynchronous programming,
+      and ES6 features. Build complex applications with confidence.</p>
+</div>
+</div> 
+</section>
 
    
 
@@ -337,44 +376,6 @@
      </div>
 </div>
 
-<div class="conteinerform">
-
-
-    <h1 class="con-us">Contact us</h1>
-    <form action="/action_page.php">
-    <div class="input">  
-         <label for="firstname">First name</label>
-         <input form="text" class="border" name="firstname" >
-    </div>     
-        
-    <div class="input">
-        <label for="lastname">Last Name</label>
-        <input type="text" class="border"  name="lastname" > 
-    </div>
-    
-    <div class="input">
-        <label for="mail">Mail</label>
-        <input type="text" class="border" name="mail">
-    </div>
-        
-    <div>
-        <label for="gender"> Female </label>
-        <input type="radio"  name="gender">
-     
-        <label for="gender">Male </label>
-        <input type="radio"  name="gender">
-    </div>
-    
-    <div class="message">
-        <label for="message">Message</label>
-        <input type="text" id="m" name="message">
-    </div>
-    
-    <div>
-        <button class="contactbutton">submit</button>
-    </div>
-</div>
-</form>
         
 
 <div class="conteiner7">
