@@ -12,10 +12,39 @@
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+         <a href="#" class="nav-logo"><img src="img/Logo.png" alt="Logo"></a>
+         <ul class="nav-menu">
+             <li class="nav-item">
+                 <a href="index.html" class="nav-link">Home</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">About Us</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">Courses</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">pricing</a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">Contact</a>
+             </li>
+         </ul>
+         <div class="hamburger">
+             <span class="bar"></span>
+             <span class="bar"></span>
+             <span class="bar"></span>
+         </div>
+     </nav>
+ 
+     </header>
+
     <section>
         <div class="conteiner">
-          <h2>search student</h2>
-          <input type="text" id="filter" />
+          <h2 id="searchtext">Search head</h2>
+          <input type="text" id="filter"  /> 
           <ul id="result"></ul>
         </div>
       </section>
@@ -24,6 +53,8 @@
 
 
     <script src="js/api.js"></script>
+    <script src="js/script.js"></script>
+
 
     
 </body>

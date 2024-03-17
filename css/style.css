@@ -274,7 +274,44 @@ body {
 
 /*  */
 
+#result li.hide {
+  display: none;
+}
+
   
+.conteiner {
+  width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 1000px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: larger;
+  color: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#filter {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #f77a14;
+  background-color: #e9e6e6;
+  margin: 20px;
+}
+
+#searchtext {
+  font-size: x-large;
+  color: #ad550d;
+}
+
+  
+
 
 
 

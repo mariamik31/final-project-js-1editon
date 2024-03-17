@@ -95,16 +95,16 @@ formElement.addEventListener("submit", function (event) {
     errors.passw2 = "Passwords do not match";
   }
 
-  let passwShow = document.getElementById("passwordfield");
+  let showPassword = document.getElementById("passwordfield");
   let icon = document.getElementById("showIcon");
 
   let showHidePassword = function () {
-    if (passwShow.type == "password") {
-      passwShow.setAttribute("type", "text");
+    if (showPassword.type == "password") {
+      showPassword.atribute("type", "text");
       icon.classList.remove("fa-eye");
       icon.classList.add("fa-eye-slash");
     } else {
-      passwShow.setAttribute("type", "password");
+      showPassword.atribute("type", "password");
       icon.classList.remove("fa-eye-slash");
       icon.classList.add("fa-eye");
     }
@@ -157,32 +157,5 @@ function scrollToTop(){
 
 // 
 
-let ulResult = document.getElementById("result");
-let inputField = document.getElementById("filter");
-
-async function asyncFncfetch() {
-  const response = await fetch("https://reqres.in/api/users?page=1");
-  console.log(response);
-  if (!response.ok) {
-    throw new Error("Error")
-  }
-  const info = await response.json();
-  return info;
-}
-
-asyncFncfetch()
-  .then((responseData) => {
-    console.log(responseData);
-    responseData.data.forEach((element) => {
-      let li = document.createElement("li");
-      li.textContent = `${element.first_name} ${element.last_name}`;
-      listItems.push(li);
-      ulResult.appendChild(li);
-    });
-  })
-
-// .catch((err) => {
-//   console.log("rejected", err);
-// });
 
 
