@@ -1,11 +1,13 @@
 "use strict";
 
+
+//
 let ulResult = document.getElementById("result");
 let inputField = document.getElementById("filter");
 
 let listItems = [];
 
-async function searchHead() {
+ async function searchHead() {
   const response = await fetch("https://reqres.in/api/users?delay=3");
   console.log(response);
   if (!response.ok) {
@@ -43,4 +45,6 @@ function filterHead(searchItem) {
 inputField.addEventListener("keyup", function () {
   filterHead(this.value);
 });
+
+// 
 

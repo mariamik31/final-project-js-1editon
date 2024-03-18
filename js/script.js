@@ -1,5 +1,8 @@
 "use strict";
 
+// import * as burger from "./burger";
+// burger.mobileMenu(); სლაიდერი მიქრება
+
 // burget bar
 
 const hamburger = document.querySelector(".hamburger");
@@ -84,14 +87,14 @@ formElement.addEventListener("submit", function (event) {
 
   //
 
-  let passwValue = document.getElementById("passwordfield").value;
+  let passwordvalue = document.getElementById("passwordfield").value;
   let passw2Value = document.getElementById("passwordfield2").value;
 
-  if (passwValue == "") {
+  if (passwordvalue == "") {
     errors.passw = "please enter paswword";
   }
 
-  if (passwValue != passw2Value) {
+  if (passwordvalue != passw2Value) {
     errors.passw2 = "Passwords do not match";
   }
 
