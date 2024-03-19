@@ -137,11 +137,11 @@ formElement.addEventListener("submit", function (event) {
 
   for (let item in errors) {
     console.log(item);
-    let errorPelement = document.getElementById("error-" + item);
-    console.log(errorPelement);
+    let errorItem = document.getElementById("error-" + item);
+    console.log(errorItem);
 
-    if (errorPelement) {
-      errorPelement.textContent = errors[item];
+    if (errorItem) {
+      errorItem.textContent = errors[item];
     }
   }
 
@@ -158,6 +158,53 @@ function scrollToTop(){
   window.scrollTo(0,0);
 }
 
+// coookies
+
+const $cookiesBanner = document.querySelector(".cookie-banner");
+const $cookiesBannerButton = $cookiesBanner.querySelector("button");
+
+const getcookie = (name) => {
+  const value = " " + document.cookie;
+  console.log("value", `==${value}==`);
+  const parts = value.split(" " + name + "=");
+  return parts.length < 2 ? undefined : parts.pop().split(";").shift();
+};
+
+const setCookie = function (name, value, expiryDays, domain, path, secure) {
+  const exdate = new Date();
+  exdate.setHours(
+    exdate.getHours() +
+      (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+  );
+  document.cookie =
+    name +
+    "=" +
+    value +
+    ";expires=" +
+    exdate.toUTCString() +
+    ";path=" +
+    (path || "/") +
+    (domain ? ";domain=" + domain : "") +
+    (secure ? ";secure" : "");
+};
+(() => {
+
+  $cookiesBannerButton.addEventListener("click", () => {
+    $cookiesBanner.remove();
+  });
+})();
+
+const cookieName = "cookiesBanner";
+const hasCookie = getcookie(cookieName);
+
+if (!hasCookie) {
+  $cookiesBanner.classList.remove("hidden");
+}
+
+$cookiesBannerButton.addEventListener("click", () => {
+  setCookie(cookieName, "closed");
+  $cookiesBanner.remove();
+});
 
 
 

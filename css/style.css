@@ -193,6 +193,7 @@ body {
 
 
 
+
 /* accordion */
 .accordion {
   background-color: rgb(255, 149, 0);
@@ -312,27 +313,82 @@ body {
 
 /*  */
 
+.conteiner-login{
+  width: 500px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* max-width: 1000px;
+  min-height: 100px;
+  margin: 0 auto; */
+  margin-top: 50px;
+  font-size: larger;
+  color: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.sectionlogin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.conteiner-login {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center
+}
+
+.username {
+  width: 200px;
+  height: 40px;
+  background-color: #fcfaf9;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#passw {
+  width: 200px;
+  height: 40px;
+  background-color: #fcfaf9;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
   
+.cookie-banner {
+  background-color: #444;
+  color: #fff;
+  padding: 6px;
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
 
+.cookie-banner button{
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px 8px;
+  font-size: 15px;
+  font-weight: 1000;
+  cursor: pointer;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.cookie-banner button:hover{
+  background-color: #E2E8F0;
+  color: #000;
+}
 
 #box3text {
   font-size: 48px;

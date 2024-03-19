@@ -12,6 +12,8 @@
     "@form-validation/validator-email-address": "^2.4.0",
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
-    "axios": "^1.6.8"
+    "@types/js-cookie": "^3.0.6",
+    "axios": "^1.6.8",
+    "js-cookie": "^3.0.5"
   }
 }
