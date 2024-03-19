@@ -11,8 +11,8 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
 //slider
@@ -25,13 +25,13 @@ var splide = new Splide(".splide", {
 
 splide.mount();
 
-// 
+//
 
 let accordion = document.getElementsByClassName("accordion");
 let i;
 
 for (i = 0; i < accordion.length; i++) {
-  accordion[i].addEventListener("click", function() {
+  accordion[i].addEventListener("click", function () {
     this.classList.toggle("active");
 
     let panel = this.nextElementSibling;
@@ -57,8 +57,6 @@ for (i = 0; i < accordion.length; i++) {
 //     }
 //   });
 // }
-
-
 
 // form
 
@@ -95,8 +93,7 @@ formElement.addEventListener("submit", function (event) {
       textError.innerHTML = "";
     }
   });
-    //სანამ არ დავასაბმითებ არ აქვს რეაგირება საბმით ღილაკის შემდეგ მუშაობს
-
+  //სანამ არ დავასაბმითებ არ აქვს რეაგირება საბმით ღილაკის შემდეგ მუშაობს
 
   //
 
@@ -167,10 +164,10 @@ formElement.addEventListener("submit", function (event) {
   console.log(errors);
 });
 
-// 
+//
 
-function scrollToTop(){
-  window.scrollTo(0,0);
+function scrollToTop() {
+  window.scrollTo(0, 0);
 }
 
 // coookies
@@ -188,8 +185,7 @@ const getcookie = (name) => {
 const setCookie = function (name, value, expiryDays, domain, path, secure) {
   const exdate = new Date();
   exdate.setHours(
-    exdate.getHours() +
-      (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
+    exdate.getHours() + (typeof expiryDays !== "number" ? 365 : expiryDays) * 24
   );
   document.cookie =
     name +
@@ -203,7 +199,6 @@ const setCookie = function (name, value, expiryDays, domain, path, secure) {
     (secure ? ";secure" : "");
 };
 (() => {
-
   $cookiesBannerButton.addEventListener("click", () => {
     $cookiesBanner.remove();
   });
@@ -221,6 +216,7 @@ $cookiesBannerButton.addEventListener("click", () => {
   $cookiesBanner.remove();
 });
 
+//
 
-
+const document = getElementById ("peopleapi")
 
