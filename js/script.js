@@ -218,5 +218,5 @@ $cookiesBannerButton.addEventListener("click", () => {
 
 //
 
-const document = getElementById ("peopleapi")
+// const document = getElementById ("peopleapi")
 
